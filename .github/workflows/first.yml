@@ -24,6 +24,8 @@ jobs: # 어떤 작업들을 수행할지
   checkout:
     runs-on: ubuntu-latest
     steps:
+      - run: ls -al
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+      - run: ls -al
